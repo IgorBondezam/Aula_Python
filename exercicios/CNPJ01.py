@@ -58,4 +58,4 @@ while True:
     if cnpj_num + str(resultado01) + str(resultado02) == CNPJ_funçoes.tira_caracter(cnpj_nome):
         print(f"VERIFICAÇÃO FEITA COM SUCESSO, O CNPJ {cnpj_nome} É VALIDO.")
     else:
-        print(f"O CNPJ {cnpj_nome} NÃO É VALIDO. ELE DEVERIA SER {cnpj_num + str(resultado01) + str(resultado02)}. ")
+        print(f"O CNPJ {cnpj_nome} NÃO É VALIDO. ELE DEVERIA SER {CNPJ_funçoes.formatar(cnpj_num) + str(resultado01) + str(resultado02)}. ")

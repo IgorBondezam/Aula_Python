@@ -1,4 +1,4 @@
-from aula_basica_python.aula_pacotes.formata import preco
+from aula_basica_python.Python_Basic.aula_pacotes.formata import preco
 
 def aumento(valor, porcentagem, formatacao = False):
     r = valor + (valor * porcentagem / 100)

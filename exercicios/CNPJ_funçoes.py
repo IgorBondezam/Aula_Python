@@ -60,3 +60,7 @@ def sequencial(cnpj):
         return True
     else:
         return False
+
+
+def formatar(cnpj):
+    return f"{cnpj[:2]}.{cnpj[2:5]}.{cnpj[5:8]}/{cnpj[8:12]}-"

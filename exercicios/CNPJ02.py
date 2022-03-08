@@ -11,11 +11,11 @@ cnpj = str(randint(10000000, 99999999))
 cnpj = cnpj + "0001"
 x = complementos(cnpj)
 y = complementos(cnpj + x)
-
+print(cnpj)
 print()
 print("="*50)
 print()
-print(f"O CNPJ gerado foi {cnpj + x + y}")
+print(f"O CNPJ gerado foi {CNPJ_funçoes.formatar(cnpj) + x + y}")
 print()
 print()
 print("="*50)
