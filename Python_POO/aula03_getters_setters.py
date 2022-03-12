@@ -24,8 +24,6 @@ class Produto:
     def preco(self, valor):
         if isinstance(valor, str):
             valor = float(valor.replace("R$", ""))
-        else:
-            valor = 5
         self._preco = valor
 
 
