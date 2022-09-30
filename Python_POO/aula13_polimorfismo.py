@@ -1,5 +1,5 @@
 """
-Polimorfismo é o principio que permite que calsses derivadas de uma mesma superclasse tenham métodos iguais(de mesma assisnatura)
+Polimorfismo é o principio que permite que classes derivadas de uma mesma superclasse tenham métodos iguais(de mesma assisnatura)
 mas comportamentos diferentes.
 Mesma assinatura = Mesma quantidade e tipo de parâmentros
 """

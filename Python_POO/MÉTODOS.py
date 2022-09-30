@@ -1,3 +1,6 @@
+# https://rszalski.github.io/magicmethods/
+
+
 """
 Operador    Método          Operação
 ------------------------------------------------------

@@ -1,0 +1,90 @@
+from datetime import date
+from datetime import datetime
+from datetime import  timedelta
+
+
+def ManipulaDataHora():
+    hoje = date.today()
+    print("Hoje é: ", hoje)
+    print("Partes da data: ", hoje.day, hoje.month, hoje.year)
+    print("Numero do dia da semana: ", hoje.weekday())
+    dias = ["seg", "ter", "qua", "qui", "sex", "sab", "dom"]
+    print("Nome abrevidado do dia da semana: ", dias[hoje.weekday()])
+
+    data = datetime.now()
+    print("Data e hora: ", data)
+
+    tempo = datetime.time(data)
+    print("Hora atual: ", tempo)
+
+
+def formataDataHOra():
+    hoje = datetime.now()
+
+    print(hoje.strftime("O ano é: %y"))
+
+    print(hoje.strftime("Data e hora local: %c"))
+
+    print(hoje.strftime("A hora atua é: %I:%M:%S %p"))
+
+
+def deltaTempo():
+    delta = timedelta(days= 86, hours=8532, minutes= 7645)
+    print(delta)
+
+    hoje = datetime.now()
+
+    print("Futuro: ", hoje+delta)
+    print("Passado: ", hoje - delta)
+
+
+
+def QUantosDiasFaltam(ano, mes, dia):
+    hoje = date.today()
+    dataProcurada = date(ano, mes, dia)
+
+    qtosDias = dataProcurada - hoje
+
+    mensagem = "Faltam " + str(qtosDias).replace("days, 0:00:00", "") + "dias para a data " + dataProcurada.strftime("%d/%m/%y")
+    print(mensagem)
+
+
+import calendar
+
+
+def CalendarioTexto():
+    calendarioTexto = calendar.TextCalendar(calendar.SUNDAY)
+    txtCalenraio = calendarioTexto.formatyear(2019)
+    print(txtCalenraio)
+
+
+def CalendarioHTML():
+    calendarioHTML = calendar.HTMLCalendar(calendar.SUNDAY)
+    htmlCalenraio = calendarioHTML.formatmonth(2019, 6)
+    print(htmlCalenraio)
+
+
+
+
+
+ManipulaDataHora()
+
+print("++++++++++++++++++++++++")
+
+formataDataHOra()
+
+print("++++++++++++++++++++++++")
+
+deltaTempo()
+
+print("++++++++++++++++++++++++")
+
+QUantosDiasFaltam(2022, 7, 26)
+
+print("++++++++++++++++++++++++")
+
+CalendarioTexto()
+
+print("++++++++++++++++++++++++")
+
+CalendarioHTML()
